@@ -1,11 +1,7 @@
-myapp.controller('mystainsController', function($scope, $http) {
+myapp.controller('mystainsController', function($scope, $http, $rootScope) {
     
-     $scope.isActive = function(viewLocation) {
-        // return viewLocation === $location.path();
-        return true
-    };
-
     $scope.pageClass = 'page-about';
+    $rootScope.showNav = true;
 
     var mystainCount = 1;
 
